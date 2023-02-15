@@ -1,1 +1,31 @@
-/*# sourceMappingURL=style.css.map */
+body {
+  margin: 0;
+}
+body .barSup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FEFAE0;
+}
+body .barSup .logo h1 {
+  font-family: "Gloria Hallelujah", cursive;
+  margin-left: 30px;
+  color: #000;
+  cursor: default;
+}
+body .barSup .mainSup ul {
+  display: flex;
+}
+body .barSup .mainSup ul li {
+  list-style: none;
+  margin: 5px;
+}
+body .barSup .mainSup ul li a {
+  text-decoration: none;
+  font-family: "Handlee", cursive;
+  font-size: 18px;
+  color: #000;
+}
+body .barSup .mainSup ul li a:hover {
+  border-bottom: 3px solid #ccd5ae;
+}/*# sourceMappingURL=style.css.map */
