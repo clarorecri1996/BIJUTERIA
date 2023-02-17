@@ -28,4 +28,32 @@ body .barSup .mainSup ul li a {
 }
 body .barSup .mainSup ul li a:hover {
   border-bottom: 3px solid #ccd5ae;
+}
+body .cuerpo .album {
+  display: flex;
+  justify-content: center;
+}
+body .cuerpo .album .coleccion {
+  display: flex;
+  width: 600px;
+  height: 430px;
+}
+body .cuerpo .album .coleccion img {
+  width: 0px;
+  flex-grow: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.8;
+  transition: 0.5s ease;
+}
+body .cuerpo .album .coleccion img:hover {
+  cursor: crosshair;
+  width: 300px;
+  opacity: 1;
+  filter: contrast(120%);
+}
+body .cuerpo div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
