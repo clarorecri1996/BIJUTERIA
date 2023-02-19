@@ -18,16 +18,18 @@ body .barSup .mainSup ul {
 }
 body .barSup .mainSup ul li {
   list-style: none;
-  margin: 5px;
+  margin: 10px;
 }
 body .barSup .mainSup ul li a {
   text-decoration: none;
   font-family: "Handlee", cursive;
   font-size: 18px;
   color: #000;
+  padding: 5px;
+  border-radius: 15px;
 }
 body .barSup .mainSup ul li a:hover {
-  border-bottom: 3px solid #ccd5ae;
+  background-color: #ccd5ae;
 }
 body .cuerpo .album {
   display: flex;
@@ -35,8 +37,9 @@ body .cuerpo .album {
 }
 body .cuerpo .album .coleccion {
   display: flex;
-  width: 600px;
+  width: 70%;
   height: 430px;
+  margin: 10px;
 }
 body .cuerpo .album .coleccion img {
   width: 0px;
@@ -52,8 +55,51 @@ body .cuerpo .album .coleccion img:hover {
   opacity: 1;
   filter: contrast(120%);
 }
-body .cuerpo div {
+body .cuerpo .bienvenida {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: "Handlee", cursive;
+}
+body .cuerpo .bienvenida .bienvenida__titulo {
+  width: 100%;
+  background-color: #ccd5ae;
+}
+body .cuerpo .bienvenida .bienvenida__titulo h2 {
+  text-align: center;
+}
+body .cuerpo .catalogo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+}
+body .cuerpo .catalogo section {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  margin: 20px;
+  border-radius: 20px;
+  box-shadow: 5px 8px 12px black;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+body .cuerpo .catalogo section:hover {
+  transform: scale(1.1);
+  box-shadow: 13px 15px 37px black;
+}
+body .cuerpo .catalogo section img {
+  width: 100%;
+  height: 100%;
+}
+body .cuerpo .catalogo section a {
+  text-decoration: none;
+  font-size: 25px;
+  font-family: "Handlee", cursive;
+  position: absolute;
+  color: #FEFAE0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
 }/*# sourceMappingURL=style.css.map */

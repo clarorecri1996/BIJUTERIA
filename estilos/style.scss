@@ -21,15 +21,17 @@ body{
                 display: flex;
                 li{
                     list-style: none;
-                    margin: 5px;
+                    margin: 10px;
                     a{
                         text-decoration: none;
                         font-family: 'Handlee', cursive;
                         font-size: 18px;
                         color: #000;
+                        padding: 5px;
+                        border-radius: 15px;
                         
                         &:hover{
-                            border-bottom: 3px solid #ccd5ae;
+                            background-color:#ccd5ae;
                         }
                     }
                 }
@@ -42,8 +44,9 @@ body{
             justify-content: center;
             .coleccion{
                 display: flex;
-                width: 600px;
+                width: 70%;
                 height: 430px;
+                margin: 10px;
                 img{
                     width: 0px;
                     flex-grow: 1;
@@ -60,10 +63,55 @@ body{
             }
 
         }
-        div{
+        .bienvenida{
             display: flex;
             flex-direction: column;
             align-items: center;
+            font-family: $letraMain;
+            .bienvenida__titulo{
+                width: 100%;
+                background-color: #ccd5ae;
+                h2{
+                    text-align: center;
+                }
+                
+            }
+        }
+        .catalogo{
+           display: grid;
+           grid-template-columns: 1fr 1fr 1fr 1fr;
+           justify-items: center;
+            section{
+                width: 200px;
+                height: 200px;
+                overflow: hidden;
+                position: relative;
+                margin: 20px;
+                border-radius: 20px;
+                box-shadow: 5px 8px 12px black;
+                cursor: pointer;
+                transition: all 0.3s ease-in-out;
+                &:hover{
+                    transform: scale(1.1);
+                    box-shadow: 13px 15px 37px black;
+                }
+                
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+                a{
+                    text-decoration: none;
+                    font-size: 25px;
+                    font-family: $letraMain;
+                    position: absolute;
+                    color: #FEFAE0;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+                }
+            }
         }
     }
 }
